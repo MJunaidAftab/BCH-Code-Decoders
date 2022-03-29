@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[20]:
-
 
 import numpy as np
-
-
-# In[21]:
 
 
 class Peterson_Gorenstein_Zierler_decoder:
@@ -119,7 +114,7 @@ class Peterson_Gorenstein_Zierler_decoder:
         return error_poly
     
     #We now decode by returning the the codeword that was sent. If less then t errors indeed took place, the
-    # correct codeword will be decoded.
+    #correct codeword will be decoded.
     
     def Codeword(self,t):
         
@@ -127,7 +122,9 @@ class Peterson_Gorenstein_Zierler_decoder:
         return error_poly + self.word
 
 
-# In[22]:
+#We now test an example. We work over the finite field GF(2^6), and assume that at most t = 3 can be corrected. In other words, we simulate the decoding 
+#algorithm using a distance 7 primitive narrow-sense BCH code. The polynomial received_polynomial is received and is decoded using the codeword
+#function in the above class.
 
 
 prime = 2
