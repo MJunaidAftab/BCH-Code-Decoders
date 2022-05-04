@@ -1,2 +1,2 @@
-# Peterson-Gorenstein-Zierler-Decoder
-This repository contains Python implementation of the Peterson-Gorenstein-Zierler decoding algorithm for BCH codewords
+# BCH Decoders
+This repository contains Python implementation of the Peterson-Gorenstein-Zierler decoding algorithm and the Sugiyama decoding algorithm for BCH codewords.
